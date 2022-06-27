@@ -1,2 +1,0 @@
-class Sbi extends Bank{
-}

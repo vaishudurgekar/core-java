@@ -1,2 +1,0 @@
-class Jawa extends Bike{
-}
