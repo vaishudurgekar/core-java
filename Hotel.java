@@ -39,3 +39,19 @@ class Hotel{
 		 }
 	     
 	}
+	
+	public boolean updateFoodNameById(int id, String name){
+	  System.out.println("Inside updateFoodNameById()");
+	  boolean updateName = false;
+	  for(int i=0; i<dtos.length; i++){
+		  if(dtos[i].getId() == id){
+			  dtos[i].setName(name);
+			  updateName = true;
+		  }
+		  else{
+			  System.out.println("Inside updateFoodNameById name is not updated");
+		  }
+	  }
+	  return updateName;
+   }
+}

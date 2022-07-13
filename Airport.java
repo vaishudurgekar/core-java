@@ -39,6 +39,19 @@ class Airport{
 	     
 	}
 
-
+    public boolean updateTerminalNameById(){
+		System.out.println("Inside updateTerminalNameById()");
+		boolean updateName = false;
+		for(int i=0; i<terminals.length){
+			if(terminals[i].getId == id){
+				terminals.setName(name);
+			  updateName	= true;
+			}
+			else{
+				
+			}
+		}
+		return updateName;
+	}
 
 }

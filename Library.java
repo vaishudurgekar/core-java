@@ -28,6 +28,22 @@ class Library{
 	  for(int i = 0; i< dtos.length; i++){
 	    System.out.println(dtos[i].getId()+ " " +dtos[i].getName());
 	  }
+	  
+   }
+   
+   public boolean updateBookNameById(int id, String name){
+	  System.out.println("Inside updateBookNameById()");
+	  boolean updateName = false;
+	  for(int i=0; i<dtos.length; i++){
+		  if(dtos[i].getId() == id){
+			  dtos[i].setName(name);
+			  updateName = true;
+		  }
+		  else{
+			  System.out.println("Inside updateBookNameById name is not updated");
+		  }
+	  }
+	  return updateName;
    }
 
 }

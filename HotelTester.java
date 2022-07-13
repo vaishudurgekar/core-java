@@ -35,6 +35,12 @@ class HotelTester{
 		 }
 		 
 		 hotel.getFoodItemDetails();
+		  System.out.println("Enter the Existing id for the Name has to be updated");
+	      int existingId = sc.nextInt();
+	      System.out.println("Enter the Name to be updated");
+	      String updateName = sc.nextLine();
+	      lib.updateFoodNameById(existingId, "Chicken");    //invoking updateBookNameById method
+	      lib.getFoodItemDetails();
 	  
 	  }
 

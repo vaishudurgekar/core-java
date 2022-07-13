@@ -18,6 +18,7 @@ class CustomerTester{
 		System.out.println("Enter the Order name");
 		 String name = scnr.next();
 		System.out.println("Enter the Order No");
+		 String no = scnr.nextInt();
 		
 		  OrderDTO dto = new OrderDTO();
 		  dto.setId(id);
@@ -27,6 +28,13 @@ class CustomerTester{
 		  cus.createOrder(dto);
 	  }
 	  cus.getOrderDetails();
+	  System.out.println("Enter the Existing Id for Name has to be updated");
+	  int existingId = id;
+	  System.out.ptintln("Enter the Name to be updated");
+	  String updatedName = sc.nextLine();
+	  cus.updateOrderNameById(existingId, updateName);
+	  cus.getOrderDetails();
    }
 
 }
+

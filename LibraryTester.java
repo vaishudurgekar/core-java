@@ -25,6 +25,12 @@ class LibraryTester{
 	     lib.createBook(dto);
 	    }
 	   lib.getBookDetails();
+	   System.out.println("Enter the Existing id for the Name has to be updated");
+	   int existingId = sc.nextInt();
+	   System.out.println("Enter the Name to be updated");
+	   String updateName = sc.nextLine();
+	   lib.updateBookNameById(existingId, "NOVEL");    //invoking updateBookNameById method
+	   lib.getBookDetails();
    }
 
 }
