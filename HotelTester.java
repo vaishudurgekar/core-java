@@ -39,7 +39,13 @@ class HotelTester{
 	      int existingId = sc.nextInt();
 	      System.out.println("Enter the Name to be updated");
 	      String updateName = sc.nextLine();
-	      lib.updateFoodNameById(existingId, "Chicken");    //invoking updateBookNameById method
+	      lib.updateFoodNameById(existingId, "Chicken");    
+		  
+		  
+	      System.out.println("Enter the Existing name of the foodItem has to be deleted");
+	      String availableFood = sc.next();
+	      hos.deletPatientByFood("Raj");
+	 
 	      lib.getFoodItemDetails();
 	  
 	  }

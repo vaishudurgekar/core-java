@@ -31,6 +31,20 @@ class Customer{
 		}
 	}
 	
+	public void getOrderNameById(int id){
+		System.out.println("Inside getOrderNameById()");
+		String bookName = null;
+		for(int i=0; i<dtos.length; i++){
+			if(dtos[i].getId()==id){
+				bookName = books[i].getName();
+			}
+			else{
+				System.out.println("The id is not matched");
+			}
+		}
+		return bookName;
+	}
+	
 	public boolean updateOrderNameById(){
 		System.out.println("Inside the updateOrderNameById()");
 		boolean updateName = false;
@@ -44,5 +58,41 @@ class Customer{
 			}
 		}
 		return updateName;
+	}
+	
+	public boolean updateOrderQuantityById(){
+		System.out.println("Inside the updateOrderNoById()");
+		boolean updateNo = false;
+		for(int i=0; i<dtos.length; i++){
+			if(dtos[i].getId() == id){
+				dtos[i].setNo(no);
+				updateQuantity = true;
+			}
+			else{
+				System.out.println("inside the updateOrderQuantityById is not updated");
+			}
+		}
+		return updateOrderQuantity;
+	}
+	
+	public boolean deleteOrderById(String id){
+		boolean orderDeleted = false;
+		 System.out.println("Inside the  deletOrderById()");
+		 int i,j;
+		 for(i=0, j=0; j<dtos.length; j++){
+			if(!dtos[j].getId().equals(id)){
+				
+				dtos[i++] = dtos[j];
+				orderDeleted = true;
+				System.out.println("Enter the name to be deleted");
+			}	
+			 
+			else{
+				System.out.println("Order's name is not found");
+			}
+		 }
+		dtos =	Arrays.copyOf(dtos, i);
+		 return orderDeleted; 
+			
 	}
 }

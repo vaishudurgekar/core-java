@@ -54,4 +54,59 @@ class Hotel{
 	  }
 	  return updateName;
    }
+   
+   public boolean updateFoodPriceByName(String name, double price){
+	   System.out.println("Inside updateFoodPriceByName()");
+	   boolean updatePrice = false;
+	   for(int i=0; i<dtos.length; i++){
+		   if(dtos[i].getName() = name){
+		   dtos[i].setPrice(price);
+		   updatePrice = price;
+		   }
+		   else{
+			   System.out.println("Inside updateFoodPriceByName price is not updated");
+		   }
+	   }
+	   return updatePrice;
+   }
+   
+   public boolean deleteFoodsByName(String name){
+		boolean foodsDeleted = false;
+		 System.out.println("Inside the  deletFoodsByName");
+		 int i,j;
+		 for(i=0, j=0; j<dtos.length; j++){
+			if(!dtos[j].getName().equals(name)){
+				
+				dtos[i++] = dtos[j];
+				foodsDeleted = true;
+				System.out.println("Enter the name to be deleted");
+
+			}	
+			 
+			else{
+				System.out.println("Food's name is not found");
+			}
+		 }
+		dtos =	Arrays.copyOf(dtos, i);
+		 return foodsDeleted; 
+			
+	}
+	
+	public boolean deletFoodItemByType(String type){
+		boolean foodsDeleted = false;
+		System.out.println("Inside deletFoodItemByType()");
+		int i,j;
+		for(i=0, j=0; j<dtos.length; j++){
+			if(!dtos[j].getType().equals(type)){
+				dtos[i++] = dtos[j];
+				foodsDeleted = true;
+				System.out.price("Enter the type to be deleted");
+			}
+			else{
+				System.out.price("Foods type is not found");
+			}
+		}
+		dtos = Array.copyOf(dtos, i);
+		return foodsDeleted;
+	}
 }

@@ -36,13 +36,46 @@ class AirportTester{
 		 
 		 }
 		 
-		 airport.getTerminalDetails();
-	     System.out.println("Enter the Existing id for the Name has to be updated");
-	     int existingId = sc.nextInt();
-	     System.out.println("Enter the Name to be updated");
-	     String updateName = sc.nextLine();
-	     lib.updateTerminalNameById(existingId, "NOVEL");    //invoking updateBookNameById method
-	     lib.getTerminalsDetails();
+		 {
+			 System.out.println("");
+		 }
+		 
+		 do{
+			 System.out.println("Enter 1 fetch the terminals");
+			 System.out.println("Enter 2 to fetch the terminals by name");
+			 System.out.println("Enter 3 to update terminal name by Id");
+			 System.out.println("Enter 4 to delet terminal by Id");
+			 System.out.println("Enter 5 to delet terminal by name");
+			 
+			 int choise = sc.nextInt();
+			 
+			 switch(choise){
+				 case 1: airport.getTerminalDetails();
+				            break;
+			     case 2: airport.getAllTerminalsName();
+				         break;
+				 case 3: System.out.println("Enter the Existing id for the Name has to be updated");
+	                     int existingId = sc.nextInt();
+	                     System.out.println("Enter the Name to be updated");
+	                     String updateName = sc.nextLine();
+	                     lib.updateTerminalNameById(existingId, updateNsme); 
+                           break;
+                 case 4: System.out.println("Enter the Existing id of the patient has to be deleted");
+	                     int availableId = sc.next();
+	                     airport.deletTerminalById();
+						 break;
+				 case 5: System.out.println("Enter name to be deleted");
+				         String name = sc.next();
+						 airport.deletTerminalByName();
+						 break;
+                 default :System.out.println("Given choises cannot be ");
+				          break;
+			 }
+			 System.out.println("Do you want to continue Y/N");
+			 option = sc.next();
+		 }
+		 while(option.equals("Y"));
+		 
 	  }
 
 }

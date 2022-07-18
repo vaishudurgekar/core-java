@@ -23,17 +23,62 @@ class CustomerTester{
 		  OrderDTO dto = new OrderDTO();
 		  dto.setId(id);
 		  dto.setName(name);
-		  dto.setNo(no);
+		  dto.setQuantity(quantity);
 		  
 		  cus.createOrder(dto);
 	  }
-	  cus.getOrderDetails();
+	  
+	  {
+		  System.out.println("");
+	  }
+	  
+	  Stirng option = null;
+	  do{
+		  System.out.println("Enter 1 to fetch order details");
+		  System.out.println("Enter 2 to fetch orer name by id");
+		  System.out.println("Enter 3 to update order name by id");
+		  System.out.println("Enter 4 to update order quantity by id");
+		  System.out.println("Enter 5 to delet book by id");
+		  
+		  int choise = sc.nextint();
+		  
+		  switch(choise){
+			  case 1: cus.getOrderDetails();
+			          break;
+			  case 2: System.out.println("Enter the existing id to fetch order name by id");
+                      int existingId = sc.nextInt();
+                      System.out.println("Enter the name of the order");
+                      String name = sc.next();
+					  cus.bookName(int id);
+                      break;
+              case 3: System.out.println("Enter id for update the order name");
+                      int id = sc.nextint();
+                      System.out.println("Enter the name to be updated");
+                      String name = sc.nextLine();
+                       cus.updateOrderNameById(id, updateName);
+              case 4: System.out.println("Enter the id for update the order quantity");
+                      int existingId = sc.nextInt();
+                      System.out.println("Enter the quantity to be updated");
+                      int quantity = sc.nextLine();
+                       cus.updateOrderQuantity(id, updateQuantity);
+              case 5: System.out.println("Enter id for delet the order");
+                       int availableId = sc.next();
+                      cus.deletOrderById(availableId);					   
+		  }
+	 }
+	 /* cus.getOrderDetails();
 	  System.out.println("Enter the Existing Id for Name has to be updated");
 	  int existingId = id;
 	  System.out.ptintln("Enter the Name to be updated");
 	  String updatedName = sc.nextLine();
 	  cus.updateOrderNameById(existingId, updateName);
-	  cus.getOrderDetails();
+	  
+	  
+	 System.out.println("Enter the Existing id of the order has to be deleted");
+	 String availableId = sc.next();
+	 hos.deletPatientById(availableId);           */
+	 
+	 
    }
 
 }
