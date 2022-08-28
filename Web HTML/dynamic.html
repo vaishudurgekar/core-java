@@ -1,0 +1,331 @@
+<!doctype html>
+<html>
+    <head>
+        <title>JavaScript</title>
+        <script>
+              console.log("Introduction to JavaScript") 
+              
+              var a;
+              console.log(a)
+              console.log(typeof(a))
+              a = 10;
+              console.log(a)
+              console.log(typeof(a))
+
+              a="javascript"
+              console.log(a)
+
+              function display(){
+                  console.log("Introduction to Function in javaScript")
+                  var displayMessege = document.getElementById("displayMessege")
+                 console.log(displayMessege)
+                 displayMessege.innerHTML = "ESCN"
+              }
+            //    display()  //to call a funcn we usse display()
+            function add(){
+            console.log("calling add()")
+            
+            //Get input 1
+            var num1 = document.getElementById("number1")
+            console.log(num1)
+            console.log(num1.value)
+
+            // Get number2
+            var num2 = document.getElementById("number2")
+            console.llog(num2)
+            console.log(num2.value)
+
+            var result=parseInt(num1.value) + parseInt(num1.value) + parseInt(num2.value)
+            console.log(result)
+            var output = document.getElementById("result")
+            output.innerHTML = result
+            } 
+            function sub(){
+                console.log("Calling Substraction")
+
+                // get input 1
+                var num1 = document.getElementById("num1")
+                console.log(num1)
+                console.log(num1.value)
+
+                // get input 2
+                var num2 = document.getElementById("num2")
+                console.log(num2)
+                console.log(num2.value)
+
+                var result = parseInt(num1.value) - parseInt(num2.value)
+                console.log(result)
+
+                var output = document.getElementById("result2")
+                output.innerHTML = result
+            }
+
+            function mult(){
+                console.log("Calling Multiplication")
+                var num1 = document.getElementById("N1")
+                console.log(num1)
+                console.log(num1.value)
+
+                var num2 = document.getElementById("N2")
+                console.log(num2)
+                console.log(num2.value)
+
+                var result = parseInt(num1.value) * parseInt(num2.value)
+                console.log(result)
+
+                var output = document.getElementById("result3")
+                output.innerHTML = result
+            }
+
+            function div(){
+                console.log("Calling Division")
+
+                var num1 = document.getElementById("numb1")
+                console.log(num1)
+                console.log(num1.value)
+
+                var num2 = document.getElementById("numb2")
+                console.log(num2)
+                console.log(num2.value)
+
+                var result = parseInt(num1.value) / parseInt(num2.value)
+                console.log(result)
+
+                var output = document.getElementById("result4")
+                output.innerHTML = result
+            }
+
+            function rcb(){
+                console.log("Royal Challengers Bangalore")
+            }
+
+            function mi(){
+                console.log("Mumbai Indians")
+            }
+
+            function csk(){
+                console.log("Chennai Super Kings")
+            }
+
+            function dc(){
+                console.log("Delhi Capitals")
+            }
+
+            function pbks(){
+                console.log("Kings IX Punjab")
+            }
+
+            function kkr(){
+                console.log("Kolkata Knight Riders")
+            }
+
+            function rr(){
+                console.log("Rajasthan Royals")
+            }
+
+            function srh(){
+                console.log("Sunrisers Hyderabad")
+            }
+
+            function lsg(){
+                console.log("Lucknow Super Giants")
+            }
+
+            function gt(){
+                console.log("Gujarat Titans")
+            }
+
+      
+        function register(){
+            console.log("enter details")
+            var userName= document.getElementById("userName")
+            console.log(userName)
+            console.log(userName.value)
+            console.log(userName.value.length)
+            if(userName.value.length = ""){
+                console.log("Please enter name")
+            }
+         
+            var email= document.getElementById("email")
+            console.log(email)
+            console.log(email.value)
+            console.log(email.value.length)
+            if(email.value.length = ""){
+                console.log("Please enter email")
+            }
+
+            var password= document.getElementById("password")
+            console.log(password)
+            console.log(password.value)
+            console.log(password.value.length)
+            if(password.value.length <=4){
+                console.log("password is week")
+            }else if(password.value.length ==4){
+                console.log("password is strong")
+            }
+   
+        console.log(document.registration.gender)
+        var gender = document.registration.gender
+        console.log(gender)
+        console.log(document.registration.gender[0].value)
+        console.log(document.registration.gender[0].checked)
+        if(document.registration.gender[0].checked == false && document.registration.gender[1].checked == false && document.registration.gender[2].checked == false ){
+             console.log("Please Select Gender")
+        }
+
+        var genderData
+        if(gender[0].checked == true){
+           genderData = gender[0].value
+        }else if(gender[1].checked == true){
+            genderData = gender[1].value
+        }else if(gender[2].checked == true){
+            genderData = gender[2].value
+        }
+
+        console.log(document.registration.city)
+        var city = document.registration.city
+       console.log(city)
+        console.log(document.registration.city.value) 
+        if(document.registration.city.value == "0"){
+            console.log("Please select city")
+        }
+
+        var registerData = {
+            "name":userName.value,
+            "email":email.value,
+            "password":password.value,
+            "gender":genderData,
+            "city":document.registration.city.value,
+        }
+        console.log(registerData)
+        localStorage.setItem("userregistration",JSON.stringify(registerData))
+         
+    }
+
+        </script>
+    </head>
+    <body>
+        <h1>JavaScript</h1>
+        <button onclick="display()">Button</button>
+
+        <div id="displayMessege"></div>
+
+        <form>
+        <h3>Addition button</h3>
+        <div>
+            <label>Entert Number1</label>
+            <input type="text" id="number1">
+        </div>
+        <div>
+            <label>Enter Number2</label>
+            <input type="text" id="number2">
+        </div>
+        <button onclick="add()" type="button">Add </button>
+        <span id="result1"></span>
+        </form>
+
+        <h3>Substraction button</h3>
+        <form>
+        <div>
+            <label>Enter Number1</label>
+            <input type="text" id="number1">
+        </div>
+        <div>
+            <lable>Enter Number2</lable>
+             <input type="text" id="number2">
+        </div>
+        <button onclick="sub()" type="button">substraction</button>
+            <span id="result2"></span>
+
+        </form>
+        <h3>Multiplication button</h3>
+        <form> 
+            <div>
+                <label>Enter Number 1 </label><br>
+                <input type="text " id="N1">
+            </div>
+            <div>
+                <label>Enter Number 2 </label><br>
+                <input type="text" id="N2">
+            </div>
+            <button onclick="mult()" type="button">Multiplication</button>
+            <span id="result3"></span>
+        </form>
+    
+            <h3>Division button</h3>
+        <form> 
+            <div>
+                <label>Enter Number 1 </label><br>
+                <input type="text" id="numb1">
+            </div>
+            <div>
+                <label>Enter Number 2 </label><br>
+                <input type="text" id="numb2">
+            </div>
+                <button onclick="div()" type="button">Division</button>
+                <span id="result4"></span>
+        </form>
+          
+        
+    
+
+        <div>
+            <h3>IPL Teams On Click</h3>
+            <button onclick="rcb()" type="button"> RCB  </button>
+            <button onclick="mi()" type="button"> MI  </button>
+            <button onclick="csk()" type="button">CSK</button>
+            <button onclick="dc()" type="button">DC</button>
+            <button onclick="pbks()" type="button">PBKS</button>
+        </div>
+
+        <div>
+          <h3>IPL Teams OnMouseOver</h3>
+            <button onmouseover="kkr()" type="button">KKR</button>
+            <button onmouseover="rr()" type="button">RR</button>
+            <button onmouseover="srh()" type="button">SRH</button>
+            <button onmouseover="lsg()" type="button">LSG</button>
+            <button onmouseover="gt()" type="button">GT</button>
+        </div>
+
+        
+        <form name="registration">
+        <div>
+            <lable>Enter name</lable>
+            <input type="text" name="userName" pattern="[A-Z][a-z]" id="userName">
+        </div>
+        <div>
+            <label>Enter Email</label>
+            <input type="email" name="email" id="email">
+        </div>
+        <div>
+            <label>Enter Password</label>
+            <input type="password" name="password" id="password">
+        </div>
+        <div>
+           <label>Select Gender</label>
+           <input type="radio" name="gender" value="female">Female
+           <input type="radio" name="gender" value="male">Male
+           <input type="radio" name="gender" value="other">Other
+        </div>
+        <div>
+            <label>Select City</label>
+            <select name="city">
+                <option value="0">--select city--</option>
+                <option value="Banglore">Banglore</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Delhi">Delhi</option>
+            </select>
+        </div>
+
+    
+        
+        <button onclick="register()" type="button">submit</button>
+
+    </form>
+        
+    </body>
+    
+</html>
+
+
+localStorage.getitem("userregistration")

@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Application Form</title>
+        <body>
+            <form name="registration" action="register.do">
+                <div>
+                  <!----  <label>Enter Name</label>
+                    <input type="text"
+                     placeholder="Enter Name" name="UserName">--->
+                     <label for="fname">First name:</label><br>
+                     <input type="text" id="fname" name="fname"><br>
+                     <label for="lname">Last name:</label><br>
+                     <input type="text" id="lname" name="lname">
+                </div>
+                <div>
+                    <label>Enter Password</label>
+                    <input type="password" name="password" minlength="6" maxlength="10">
+                </div>
+                <div>
+                    <label>Enter Age</label>
+                    <input type="number" name="age" min="20" max="50">
+                </div>
+                <div>
+                    <label>Enter Email</label>
+                    <input type="email" name="mail" value="abc@gmailcom">
+                </div>
+
+                <div>
+                  <label>Select Gender</label>
+                  <input type="radio" name="gender" value="Female">Female
+                  <input type="radio" name="gender" value="Male">Male
+                  <input type="radio" name="gender" value="Other">Others
+                 </div>
+                 <div>
+                    <p>Choose your Higest Qualification:</p>
+                   <input type="radio" id="under graduate" name="Higest Qualification" value="Degree">
+                   <label for="degree">Under Graduate</label><br>
+                   <input type="radio" id="post graduate" name="Higest Qualification" value="Degree">
+                  <label for="degree">Post Graduate</label>
+                 </div>
+                 <div>
+                 <label>Select Degree</label>
+                 <select name="Degree">
+                    <option>---Select Degree</option>
+                    <option>Mtech</option>
+                    <option>ME</option>
+                    <option>Msc</option>
+                    <option>Mca</option>
+                    <option>Btect</option>
+                    <option>BE</option>
+                    <option>Bsc</option>
+                    <option>Bca</option>
+                 </select>
+                  </div>
+                  <div>
+                     <label>Year of passout</label>
+                     <input type="search" name="yearOfPassout">
+                  
+                  </div>
+                 <div>
+                        <label>Select city</label>
+                        <select name="city">
+                            <option>--Select city--</option>
+                            <option>Banglore</option>
+                            <option>Maglore</option>
+                            <option>Hasan</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label>Enter Ph.No</label>
+                        <input type="Number" name="Ph.no">
+                    </div>
+                    <div>
+                        <label>Enter Date of Birth</label>
+                        <input type="date" name="dateOfBirth">
+                    </div>
+                    <div>
+                        <label>Enetr Education Details</label>
+                        <input type="Education" name="Degree"
+                    </div>
+                    <div>
+                    <input type="submit">
+                  <!----  <button type="submit">Submit</button>--->
+                    <input type="reset">
+                    <input type="Checkbox">
+                    </div>
+                    <div>
+                        <label for="country_code">Country code:</label>
+                        <input type="text" id="country_code" name="country_code"
+                        pattern="[A-Za-z]{3}" title="Three letter country code"><br><br>
+                       
+                    </div>
+                    <div>
+                        <label for="website">Homepage:</label>
+                        <input type="url" id="website" name="website"
+                        pattern="https?://.+" title="Include http://">
+                    </div>
+            </form>
+        </body>
+    </head>
+
+
+    <!---patern-->
+    <!--Basic structure of html
+    Table
+     Form
+    List-->

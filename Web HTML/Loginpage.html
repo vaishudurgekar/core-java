@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>Form</title>
+        <script src="Login.js"></script>
+        <!--     function login(){
+                 var email=document.getElementById("email")
+                 console.log(email)
+                 console.log(email.value)
+                 console.log(email.value.length)
+                 if(email.value.length== ""){
+                     console.log("please enter email")
+                 }
+
+                 var password=document.getElementById("password")
+                 console.log(password)
+                 console.log(password.value)
+                 console.log(password.value.length)
+                 if(password.value.length== 6){
+                     console.log("Password is weak")
+
+                 }else if (password.value.length == 6){
+                     console.log("Password is strong")
+                 }
+
+                 var registerData={
+                     email:email.value,
+                     password:password.value,
+                 }
+                 console.log(registerData)
+                 sessionStorage.setItem("userregistration",JSON.stringify(registerData))
+
+
+            }
+         </script>      -->
+    </head>
+<body>
+    <form name="registeration">
+        <div>
+            <label>Enter email</label>
+            <input type="email" name="email" id="email">
+        </div>
+        <div>
+            <label>Enter password</label>
+            <input type="password" name="password" id="password">
+        </div>
+
+        <button onclick="login()" type="button">Login</button>
+        <div id="loginresult"></div>
+    </form>
+</body>
+</html>

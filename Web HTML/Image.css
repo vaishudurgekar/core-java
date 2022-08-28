@@ -1,0 +1,14 @@
+img{
+    position: relative;
+    background-color: red;
+}
+
+.form{
+    float:right;
+    position: absolute;
+    top: 0px;
+    right: 100px;
+    left: 500px;
+    position: right;
+    background: yellow;
+}
