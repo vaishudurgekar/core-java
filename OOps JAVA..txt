@@ -1,0 +1,9 @@
+OOps- Object Oriented programin language
+Is the way use to build/develop software
+
+4 principle OR 4 pillers
+
+1)Inheritance
+2)Encapsulation
+3)Abstraction 
+4)Polymorphism

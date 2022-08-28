@@ -1,0 +1,30 @@
+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
+
+
+https://github.com/vaishudurgekar/core-java.git  -  URL
+
+
+
+git clone url
+git checkout -b branchName
+git status
+git add .
+git status
+git commit -m 'messege'
+git push origin branchName
+
+https://github.com/vaishudurgekar/vaishudurgekar.github.io.git
+git clone url
+
+
+class{
+
+  methods
+  variables
+  costructor
+  blocks - static block will executed frst
+}
+
+do{
+    sop();
+}while();
