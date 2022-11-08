@@ -1,0 +1,134 @@
+Arrays -  do not have inbuilt data structures and algorithms.
+there is only one property - length
+Fixed in size
+Store the similar type of data in general ,,, we can have different type of data in array not in general
+
+Collection is interface which is available in java.util package.
+
+Collection Inbuilt Methods
+
+In Collection we use add method.
+
+boolean add(Object o)
+int size()
+boolean contains(Object o)
+boolean remove(Object o)
+boolean isEmpty(Object o)
+boolean equals(Object o)
+void clear()
+int hashCode()
+boolean retainAll(Collection c)
+boolean addAll(Collection c)
+boolean containsAll(Collection c)
+boolean removeAll(Collection c)
+
+Array List is a class , gives implimentation for all the method of collection, implimentation class
+
+List is index Based Collection
+List is ordered
+Lis is a sub interface of collection
+List can allow duplicates
+List can allow null values
+It preserves insersion order- how we add the data based on that we'll get output
+
+ArrayList:-
+It preserves insersion order- how we add the data based on that we'll get output
+It is implemntation class of list.
+Default value of ArrayList is 10.
+Array List stores data in sequesntial order
+ArrayList follow one data structure - resizable array or dynamic array
+If we fetch 11 index array list will grow
+Functionality of ArrayList is grow();  (grow method)
+Formula for arrayList when we add 11th value - int newCapacity = oldCapacity + (oldCapacity >>1);
+Binary form -   8 4 2 1
+Binary for 10 - 1 0 1 0
+                 1 0 1 0
+Search concept is faster in ArraList than LinkedList
+Search operation is faster in ArraList reason is it interfaces RandomAccess
+
+RandomAccess, Clonable, serializable
+
+LinkedList:-
+Does not have any default size
+Grows elemnt by 1.-size of LinkedList is 1.
+Doesnot store data in sequential order it will in random. 
+LinkedList is based on NODE. 1 data means 1Node means 2 values.
+Node have 3 information - 1)previous elemnt address 2)value 3)next elemnt address.
+LinkedList follows structure - doubly Linked List.
+
+Difference btw arraylist and HashSet
+
+Vector - grow based on double of capacity.  smlr to arylst
+
+Stack
+
+Set Interface of collection
+it doesnot allow duplicates
+doesnot preserves insertion order
+basic implementation of set is hashset.
+
+HashSet is implementation class of set
+LinkedHashSet does not follow duplicate          globle array, doubly linked,
+
+How set store unique data?
+
+MAP- we use put method , it is a interface
+store the value in the form of key and value.
+
+set act as map 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

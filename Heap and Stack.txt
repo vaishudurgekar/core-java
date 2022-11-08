@@ -1,0 +1,130 @@
+Jvm will call GC mechanism in Eden memory- Garbage Collector, multiple times call, young gen -name is minorGC
+All the memory in young gen filled will moved to old gen -majorGC.
+We can cl GC
+Memory address will alocated
+                    
+                            JVM architecture
+                                 
+Main purpose stack- exicute methods one after the other, before and after exicution stack memory will be empty.
+Main purpose heap - store objects.
+Method area or peramemt generation- classnames, static variable, final variable
+instance and local variable stored in memory address in prticular memory
+All primitive stored in stavk
+
+SCP-String Constatnt Pool. in heap old memory - will come into pic when we create object with the help of literals.
+String related data will store in heap in that SCP. -literals object.
+Using new keyword object created store in outside SCP.
+Equal method compare content of an object. It is used to compare value of object.
+== is used to compare address of any two objects or reference variable.
+
+
+Object stored in heap addressed by reference
+Stack is also called class.
+
+
+27/07/2020
+
+To make java purely object oriented we have corresponding class called wraper class
+java.lang package all wraper cls will be available. java.lang- default package
+Boxing - auto and 
+
+warper cls can 2 types - 1 is using new keyword (Int int = new Int(23);), 2 is using literal(value-Int it=32;).
+we can create warper and string class without using new.
+Properties of warper class.
+
+
+28/07/2020
+
+All type of warper class default value is null- (its class- ex.Integer)
+String type of value is considered with the help of .equals(baba)
+one value is null we are  ecessing any method or variable from one value we will always land up with NULLPOINTEREXCEPTION.
+To compare String type variable we will use equals method(i.e .equals())
+
+Multiple charecter in single variable we use charecter array
+
+String is a class, sequence of charecter.
+String object are inmutable-means cannot change the content of an object - new object created with new reference variable
+For String mutablility we use StringBuilder or StringBuffer - two string related objects 
++ is not supported to stringbuilder and stringbuffer use .append() only for string.
+Concatinaton operator- +, .append()
+To avoid concatination btw String and Stringbuilder .append() will use
+StringBuilder and StringBuffer are mutable in nature.
+
+in string we have + method also concat().
+How to have a inmutable class in java?
+We can overload the final class but cant override.- method
+final variable cannot be int - variable
+final class cannot be inherited.- class.
+
+Exception is a abnormal condition or unexpeted event or unwanted event which ouurs in the execution of the program and it updraft the normal flow of the code.
+Two type of handler is in jvm - defaualt handler and catch.
+In catch block - 
+   printStactTrace() is used to get details about exception.
+All the exception is in java is class at compile time but reun time is object.
+Types of exception - Parent exception- RunTimeException is also class, we can also give ingeritance example for exception
+Compile time exception also calle checked
+Difference between Errors and Exception
+
+throws - willing to not handle the exception. help us to specify the exception
+ Syntax for throws - access modifier  return type  methodName()  throws  nameOfException{
+          }
+
+Syntax for forName() is - forname("ClassName")  throws  ClassNotFoundException
+stackVinding also called as exception propagation - handlig using throws keyword
+throw is used inside the method and throws used with methodsignature.
+Exception extends exception get compileTime Exception, Exception extends Runtimeexception get Unchecked exception.
+
+finally {   -close all the costly resourses, used after the catch block, will be executed wtheter the exeptiom occurs or not
+ }
+
+Difference btw final , finally , finalize
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

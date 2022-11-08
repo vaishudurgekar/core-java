@@ -1,0 +1,14 @@
+JDBC specification 
+RDBMS(relational database)
+       my sql
+       oracle 81, 19, 
+       posytgres
+       mysql server etc
+
+Steps in JDBC
+1. load vender class
+2. create connection 
+3. create statment
+4. process query and execute sql
+5. close connection
+

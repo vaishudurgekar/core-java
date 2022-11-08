@@ -1,0 +1,17 @@
+Comparable
+It is an interface
+we pass object
+why - to sort list
+different property
+
+
+https://www.educba.com/sort-string-in-java/
+
+
+MAP
+Simple interface - still collection framework interface
+Map store data in the form of key and value
+Map(interface)-HashMap(class)-LinkedHashMap(class)-SortedMap
+    SortedMap(interface)-TreeMap(class)
+ConcurrentMap
+put to add the data(k,V);
